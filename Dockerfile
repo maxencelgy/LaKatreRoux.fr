@@ -2,10 +2,10 @@
 FROM node:18
 
 # Définit le répertoire de travail
-WORKDIR /api/
+WORKDIR /api/src
 
 # Copie les fichiers package.json et package-lock.json
-COPY package*.json ./
+COPY package*.json ../
 
 # Installez les dépendances npm
 RUN yarn
